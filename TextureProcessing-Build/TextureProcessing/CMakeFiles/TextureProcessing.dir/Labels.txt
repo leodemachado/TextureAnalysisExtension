@@ -1,0 +1,4 @@
+# Target labels
+ TextureProcessing
+# Source files and their labels
+/usr/local/Slicer/Slicer-build/Base/CLI/SEMCommandLineLibraryWrapper.cxx

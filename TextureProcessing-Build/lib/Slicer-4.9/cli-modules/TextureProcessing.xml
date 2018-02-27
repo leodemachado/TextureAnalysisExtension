@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Texture Analysis</category>
+  <title>Texture Extractor</title>
+  <description><![CDATA[This is a CLI module to extract Textural Information of a MRI region of interest defined by a label region.]]></description>
+  <version>1.0</version>
+  <documentation-url>http://www.example.com/Slicer/Modules/HistogramStatistics</documentation-url>
+  <license>Slicer</license>
+  <contributor>Leonardo Machado</contributor>
+  <acknowledgements>This work is part of the required work for Master's Dissertation Defense. This CLI module was developed in the Computing in Signals and Images in Medicine Laboratory, at University of São Paulo, Ribeirão Preto, CSIM. Addional credits and special thanks to Luiz Otavio Murta Junior, Fabrício Simozo, Antonio Carlos Senra Filho, Gustavo Barizon, Mehran Azimbagirad, who gave valuable contributions and improvements to this work.</acknowledgements>
+  <parameters>
+   <label>IO</label>
+   <description><![CDATA[Input/output parameters]]></description>
+   <image>
+    <name>inputVolume</name>
+    <label>Input Volume</label>
+    <channel>input</channel>
+    <index>0</index>
+    <description><![CDATA[Input volume]]></description>
+   </image>
+   <image>
+    <name>inputLabel</name>
+    <label>Input Label</label>
+    <channel>input</channel>
+    <index>1</index>
+    <description><![CDATA[Input Label]]></description>
+   </image>
+   <directory>
+    <label>Saving path</label>
+    <name>spath</name>
+    <longflag>--spath</longflag>
+    <description><![CDATA[Where do you wan to save tour data files?]]></description>
+   </directory>
+  </parameters>
+  <parameters>
+   <label>Cheking Features</label>
+   <description><![CDATA[Features to be extracted]]></description>
+   <boolean>
+    <name>doNormalization</name>
+    <flag>-n</flag>
+    <longflag>--donormalization</longflag>
+    <label>Normalization</label>
+    <description><![CDATA[Allows it to do a normalization of pixel intensities in the image before feature extraction.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doHistogramFeat</name>
+    <flag>-d</flag>
+    <longflag>--dohistogramfeat</longflag>
+    <label>Histogram Features</label>
+    <description><![CDATA[Allows it to extract histogram features.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doPercentiles</name>
+    <flag>-p</flag>
+    <longflag>--dopercentiles</longflag>
+    <label>Percentiles</label>
+    <description><![CDATA[Allows it to calculate and save percentile values.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doCoocurrenceFeat</name>
+    <flag>-c</flag>
+    <longflag>--docoocurrencefeat</longflag>
+    <label>Coocurrence Matrix Features</label>
+    <description><![CDATA[Allows it to extract coocurrence matrix features.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doRunFeat</name>
+    <flag>-r</flag>
+    <longflag>--dorunfeat</longflag>
+    <label>Run Lengh Matrix Features</label>
+    <description><![CDATA[Allows it to extract run length matrix features.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doGradient</name>
+    <flag>-g</flag>
+    <longflag>--dogradient</longflag>
+    <label>Gradient Features</label>
+    <description><![CDATA[Allows it to extract gradient features.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doShapeFeat</name>
+    <flag>-s</flag>
+    <longflag>--doshapefeat</longflag>
+    <label>Shape Features</label>
+    <description><![CDATA[Allows it to extract shape features.]]></description>
+    <default>true</default>
+   </boolean>
+   <boolean>
+    <name>doHistoPlot</name>
+    <flag>-t</flag>
+    <longflag>--dohistoplot</longflag>
+    <label>Plot Histogram</label>
+    <description><![CDATA[This will plot the histogram in a .txt file.]]></description>
+    <default>true</default>
+   </boolean>
+  </parameters>
+</executable>

@@ -1,0 +1,14 @@
+# Target labels
+ TextureProcessing
+# Source files and their labels
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing-Build/TextureProcessing/TextureProcessingCLP.h
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/Plot/HistogramPlot.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/Percents/PercentileCalc.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/Features/HistoFeat.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/CoocurrenceFeat/CoocurrenceFeat.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/ShapeFeatures/ShapeFeat.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/RunLengthFeat/RunLengthFeat.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/Normalization/Normalize.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/Gradient/GradientFeat.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing/TextureProcessing.cxx
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_Slicer/TextureProcessingExtension/TextureProcessing-Build/TextureProcessing/TextureProcessingCLP.h.rule
